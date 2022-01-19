@@ -90,7 +90,7 @@ class NoisyCleanSet:
         self.clean_set = Audioset(clean, **kw)
         self.noisy_set = Audioset(noisy, **kw)
 
-        #assert len(self.clean_set) == len(self.noisy_set)
+        assert len(self.clean_set) == len(self.noisy_set)
 
     def __getitem__(self, index):
         return self.noisy_set[index], self.clean_set[index]
