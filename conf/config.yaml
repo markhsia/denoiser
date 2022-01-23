@@ -64,7 +64,7 @@ demucs:
   chin: 1
   chout: 1
   hidden: 48
-  max_hidden: 10000
+  max_hidden: 20000 #10000
   causal: true
   glu: true
   depth: 5
