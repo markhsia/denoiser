@@ -68,7 +68,7 @@ demucs:
   causal: true
   glu: true
   depth: 5
-  kernel_size: 8
+  kernel_size: 4 #8
   stride: 4
   normalize: true
   resample: 4
