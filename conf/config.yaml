@@ -19,16 +19,16 @@ revecho: 0  # add reverb like augment
 # Logging and printing, and does not impact training
 num_prints: 1 # 5
 device:  # cuda
-num_workers: 5
+num_workers: 8 #5
 verbose: 0
 show: 0   # just show the model and its size and exit
 
 # Checkpointing, by default automatically load last checkpoint
 checkpoint: true
-continue_from: '/drive/MyDrive/Colab Notebooks/人聲語音去噪/exp/best.th' # Path the a checkpoint.th file to start from.
+continue_from: '' # Path the a checkpoint.th file to start from.
                   # this is not used in the name of the experiment!
                   # so use a dummy=something not to mixup experiments.
-continue_best: true  # continue from best, not last state if continue_from is set.
+continue_best: false #true  # continue from best, not last state if continue_from is set.
 continue_pretrained:   # use either dns48, dns64 or master64 to fine tune from pretrained-model
 restart: false # Ignore existing checkpoints
 checkpoint_file: checkpoint.th
@@ -56,7 +56,7 @@ stft_loss: False
 stft_sc_factor: .5
 stft_mag_factor: .5
 epochs: 20 #500
-batch_size: 8 #64
+batch_size: 16 #64
 
 # Models
 model: demucs # either demucs or dwave
