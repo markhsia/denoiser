@@ -59,7 +59,7 @@ epochs: 20 #500
 batch_size: 16 #64
 
 # Models
-model: demucs # either demucs or dwave
+model: dwave #demucs # either demucs or dwave
 demucs:
   chin: 1
   chout: 1
