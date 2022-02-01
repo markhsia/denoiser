@@ -55,11 +55,11 @@ loss: l1
 stft_loss: False
 stft_sc_factor: .5
 stft_mag_factor: .5
-epochs: 25 #500
+epochs: 40 #500
 batch_size: 32 #64
 
 # Models
-model: dwave #demucs # either demucs or dwave
+model: demucs # either demucs or dwave
 demucs:
   chin: 1
   chout: 1
