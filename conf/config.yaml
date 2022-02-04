@@ -18,7 +18,7 @@ revecho: 0  # add reverb like augment
 
 # Logging and printing, and does not impact training
 num_prints: 1 # 5
-device: # cuda
+device:  cuda
 num_workers: 8 #5
 verbose: 0
 show: 0   # just show the model and its size and exit
@@ -55,7 +55,7 @@ loss: l1
 stft_loss: False
 stft_sc_factor: .5
 stft_mag_factor: .5
-epochs: 360 #500
+epochs: 10 #500
 batch_size: 32 #64
 
 # Models
