@@ -17,7 +17,7 @@ shift_same: false   # shift noise and clean by the same amount
 revecho: 0  # add reverb like augment
 
 # Logging and printing, and does not impact training
-num_prints:  5
+num_prints:  0 #5
 device:  cuda
 num_workers: 8 #5
 verbose: 0
