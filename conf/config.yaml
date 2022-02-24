@@ -49,14 +49,14 @@ streaming: False  # use streaming evaluation for Demucs
 
 # Optimization related
 optim: adam
-lr: 3e-5 #3e-4
+lr: 3e-4
 beta2: 0.999
 loss: l1
 stft_loss: False
 stft_sc_factor: .5
 stft_mag_factor: .5
 epochs: 5000
-batch_size: 32 #64
+batch_size: 4 #64
 
 # Models
 model: demucs # either demucs or dwave
